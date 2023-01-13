@@ -12,14 +12,36 @@ installation guidelines:
 
 GIT CLONE onto your local machine , open your terminal and run the following commands 
 
+$ npm init -y
+$ npm install 
+check the dependencies for express and cors if not showing run following commands
+$ npm install express
+$ npm install cors
+
+then for the docker container open docker on your local machine
+run commands 
+$ docker run -p 27017:279017 --name badbank -d mongo
+//to make sure docker is running run following command
+$docker ps
+then run 
 $ node index.js     you should get the following response  in your terminal 
 
 Running on port: 3000
 Connected successfully to db server
  
-Navigate to     localhost:3000      in your browser 
+Navigate to     http://localhost:3000      in your browser 
 
 
 
 
 
+
+
+https://user-images.githubusercontent.com/103603599/212222040-0f5472ef-0656-4695-8fa6-605438d8218b.mov
+
+
+languages and technology used: Node, JS, HTML, CSS, cors, Express, MongoDB, docker
+
+
+
+License: MIT
